@@ -27,12 +27,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const courses = [
     {
       name: "Health Sciences",
-      img: "https://img.icons8.com/color/96/000000/health-book.png",
+      img: "https://img.icons8.com/color/96/000000/stethoscope.png", // Stethoscope icon
       desc: "Medical support, community health, first aid skills."
     },
     {
       name: "Information Technology",
-      img: "https://img.icons8.com/nolan/96/laptop-coding.png", // Modern IT icon
+      img: "https://img.icons8.com/color/96/000000/laptop-coding.png", // Laptop coding icon
       desc: "Digital literacy, graphic design, web development, computer repair."
     },
     {
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const academicCategories = [
       {
         name: "Health Sciences",
-        img: "https://img.icons8.com/color/96/000000/health-book.png",
+        img: "https://img.icons8.com/color/96/000000/stethoscope.png", // Stethoscope icon
         desc: "Medical support, community health, first aid skills.",
         courses: [
           "Certificate in Community Health",
@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       {
         name: "Information Technology",
-        img: "https://img.icons8.com/nolan/96/laptop-coding.png",
+        img: "https://img.icons8.com/color/96/000000/laptop-coding.png", // Laptop coding icon
         desc: "Digital literacy, graphic design, web development, computer repair.",
         courses: [
           "Certificate in IT Fundamentals",
