@@ -28,26 +28,25 @@
       <div class="container">
         <h2>Academic Programs</h2>
         <div class="card-grid" id="academicsGrid">
-          <!-- Cards injected by JS -->
+          <!-- JS injects category cards and dynamic blinking/modal -->
         </div>
-        <div class="course-lists" id="courseLists"></div>
+        <div id="coursesDisplay"></div>
       </div>
     </section>
   </main>
   <footer class="site-footer">
     <div class="container">
-      <p>Naro Moru, Nyeri County, Kenya</p>
-      <p>Phone: <a href="tel:+254700635325">0700635325</a> &nbsp; | &nbsp; Email: <a href="mailto:mountsviewvocational2023@gmail.com">mountsviewvocational2023@gmail.com</a></p>
       <p>&copy; 2025 Mountsview Technical College</p>
-      <p class="footer-credit">
-        Design by <span class="evis">Evis</span> —
-        <a href="https://wa.me/254715365500?text=Hello%20Evis!%20I%20saw%20your%20design%20at%20Mountsview%20College%20site." target="_blank" class="whatsapp-footer-link">
-          <img src="https://img.icons8.com/color/24/000000/whatsapp.png" alt="WhatsApp" />
-          Chat with Evis on WhatsApp
-        </a>
-      </p>
+      <div class="designer-footer">
+        <span>Design by 
+          <a href="https://wa.me/254715365500?text=Hi%20Evis!%20I%20love%20your%20website%20design%20for%20Mountsview%20College!" target="_blank" class="designer-link">
+            Evis <img src="https://img.icons8.com/color/24/000000/whatsapp.png" alt="WhatsApp" style="vertical-align:middle;" />
+          </a>
+        </span>
+      </div>
     </div>
   </footer>
+  <!-- Modal included only once in site; scripts.js will display it upclose -->
   <div class="modal" id="applyModal">
     <div class="modal-content">
       <span class="close-modal" id="closeModal">&times;</span>
