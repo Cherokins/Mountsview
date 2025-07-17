@@ -1,97 +1,117 @@
-/* ... keep all previous styles above ... */
+/* ...keep your previous styles above... */
 
-/* Modern Contact Page Styles */
+/* --- Modern Contact Page --- */
+
 .contact-hero {
   background: linear-gradient(135deg, #25d366 0%, #002b5c 100%);
   color: #fff;
-  padding: 3em 0 2em 0;
+  padding: 2.5em 0 1.5em 0;
   text-align: center;
 }
+
 .contact-hero-content {
-  max-width: 600px;
+  max-width: 550px;
   margin: 0 auto;
 }
+
 .contact-hero-icon {
-  width: 88px;
-  margin-bottom: 2em;
+  width: 74px;
+  margin-bottom: 1em;
   filter: drop-shadow(0 2px 12px #fff3);
 }
-.contact-section-modern {
+
+.contact-modern {
   background: #f8fafd;
   padding: 3em 0;
 }
-.contact-modern-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.5em;
-  max-width: 1000px;
+
+.contact-modern-flex {
+  display: flex;
+  gap: 3em;
+  max-width: 900px;
   margin: 0 auto;
+  align-items: stretch;
 }
-.contact-modern-card {
+
+.contact-modern-details,
+.contact-modern-form {
   background: #fff;
   border-radius: 14px;
   box-shadow: 0 4px 20px rgba(0,43,92,0.07);
-  padding: 2em 2.5em;
+  padding: 2em 2em;
+  flex: 1 1 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 390px;
+  min-width: 250px;
 }
-.contact-modern-details h2 {
-  color: #25d366;
+
+.contact-modern-details {
   margin-bottom: 1em;
-  font-size: 1.3em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: flex-start;
 }
-.contact-modern-info {
-  margin-bottom: 1.5em;
-}
-.contact-modern-info-item {
+
+.contact-detail-item {
   display: flex;
   align-items: center;
   gap: 1em;
-  font-size: 1.1em;
-  margin-bottom: 1em;
+  font-size: 1.04em;
+  margin-bottom: 0.7em;
 }
-.contact-modern-info-item img {
+
+.contact-detail-item img {
   width: 32px;
   height: 32px;
 }
-.contact-modern-info-item a {
+
+.contact-detail-item a {
   color: #002b5c;
   font-weight: 600;
   text-decoration: none;
+  transition: color 0.2s;
 }
-.contact-modern-info-item a:hover { color: #25d366; }
+.contact-detail-item a:hover {
+  color: #25d366;
+}
+
 .whatsapp-modern-link {
   color: #fff;
   background: #25d366;
-  padding: 0.3em 0.8em;
+  padding: 0.3em 0.9em;
   border-radius: 6px;
   font-weight: 600;
   display: inline-block;
+  letter-spacing: 0.02em;
 }
+
 .contact-socials {
-  margin-top: 1.7em;
+  margin-top: 1.1em;
+  display: flex;
+  gap: 1em;
+  align-items: center;
 }
+
 .contact-socials a {
-  margin: 0 0.6em;
   transition: transform 0.2s;
   outline: none;
 }
 .contact-socials a:hover { transform: scale(1.17); }
+
 .contact-modern-form h2 {
   color: #002b5c;
   margin-bottom: 1em;
-  font-size: 1.3em;
+  font-size: 1.15em;
+  text-align: center;
 }
+
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 1em;
-}
-.contact-form-row {
-  display: flex;
-  gap: 1em;
+  margin-top: 0.5em;
 }
 .contact-form input,
 .contact-form textarea {
@@ -101,6 +121,7 @@
   padding: 0.7em;
   width: 100%;
   resize: none;
+  box-sizing: border-box;
 }
 .contact-form input:focus,
 .contact-form textarea:focus {
@@ -108,11 +129,13 @@
   outline: none;
   box-shadow: 0 0 9px #25d36633;
 }
+
 .contact-form .btn-primary {
   margin-top: 0.7em;
   width: 60%;
   align-self: center;
 }
+
 .contact-form-success {
   background: #e7edf4;
   color: #25d366;
@@ -122,16 +145,19 @@
   margin-top: 1em;
   font-weight: 600;
 }
+
 .contact-map {
   background: #f4f6f9;
   padding: 3em 0;
   text-align: center;
 }
+
 .contact-map h2 {
   color: #002b5c;
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin-bottom: 1em;
 }
+
 .contact-map-embed {
   max-width: 600px;
   margin: 0 auto;
@@ -139,25 +165,22 @@
   overflow: hidden;
   box-shadow: 0 4px 16px rgba(0,43,92,0.08);
 }
+
 @media (max-width: 900px) {
-  .contact-modern-grid {
-    grid-template-columns: 1fr;
+  .contact-modern-flex {
+    flex-direction: column;
     gap: 2em;
   }
-  .contact-modern-card {
-    min-height: 0;
-  }
 }
+
 @media (max-width: 600px) {
   .contact-hero {
-    padding: 2em 0 1em 0;
+    padding: 1.5em 0 0.7em 0;
   }
-  .contact-modern-card {
-    padding: 1.2em 0.7em;
-  }
-  .contact-form-row {
-    flex-direction: column;
-    gap: 0;
+  .contact-modern-details,
+  .contact-modern-form {
+    padding: 1.1em 0.6em;
+    min-width: 0;
   }
   .contact-map-embed {
     height: 170px;
