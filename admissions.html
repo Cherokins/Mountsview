@@ -1,69 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admissions - Mountsview Technical College</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admissions | Mountsview Technical College</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="scripts.js"></script>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="assets/images/logo.png" alt="Mountsview Technical College Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="admissions.html">Admissions</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="admissions-intro">
-            <h1>Admissions</h1>
-            <p>Welcome to the admissions page of Mountsview Technical College. We are excited to help you start your journey towards a rewarding education.</p>
-        </section>
-
-        <section class="application-process">
-            <h2>Application Process</h2>
-            <ol>
-                <li>Complete the online application form.</li>
-                <li>Submit required documents.</li>
-                <li>Pay the application fee.</li>
-                <li>Schedule an interview (if applicable).</li>
-                <li>Receive your admission decision.</li>
-            </ol>
-        </section>
-
-        <section class="requirements">
-            <h2>Admission Requirements</h2>
-            <ul>
-                <li>High school diploma or equivalent.</li>
-                <li>Completed application form.</li>
-                <li>Official transcripts.</li>
-                <li>Personal statement.</li>
-                <li>Letters of recommendation (optional).</li>
-            </ul>
-        </section>
-
-        <section class="financial-aid">
-            <h2>Financial Aid</h2>
-            <p>Mountsview Technical College offers various financial aid options to help students afford their education. Visit our financial aid page for more information.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Mountsview Technical College. All rights reserved.</p>
-        <div class="contact-info">
-            <p>Email: info@mountsview.edu</p>
-            <p>Phone: (123) 456-7890</p>
-        </div>
-    </footer>
-
-    <script src="assets/js/scripts.js"></script>
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="brand">Mountsview Technical College</div>
+      <div class="menu-toggle" aria-label="Toggle navigation" tabindex="0"><span></span><span></span><span></span></div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="admissions.html" class="active">Admissions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="intro">
+      <div class="container text-center">
+        <h2>Admissions</h2>
+        <p>
+          Ready to start your journey at Mountsview Technical College?  
+          Contact us to receive an application form or learn about entry requirements for each program.  
+          <br/><br/>
+          <a href="contact.html" class="btn-primary">Contact Admissions</a>
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Mountsview Technical College</p>
+    </div>
+  </footer>
 </body>
 </html>
