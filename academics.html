@@ -27,27 +27,51 @@
     <section class="features">
       <div class="container">
         <h2>Academic Programs</h2>
-        <div class="card-grid">
-          <div class="card">
-            <h3>Information Technology</h3>
-            <p>Digital literacy, graphic design, computer repair, web development.</p>
-          </div>
-          <div class="card">
-            <h3>Technical Trades</h3>
-            <p>Fashion & design, hairdressing, electronics, electrical work.</p>
-          </div>
-          <div class="card">
-            <h3>Health Sciences</h3>
-            <p>Medical support, community health, first aid skills.</p>
-          </div>
+        <div class="card-grid" id="academicsGrid">
+          <!-- Cards injected by JS -->
         </div>
+        <!-- Course lists will be injected and shown when category clicked -->
+        <div class="course-lists" id="courseLists"></div>
       </div>
     </section>
   </main>
   <footer class="site-footer">
     <div class="container">
+      <p>Naro Moru, Nyeri County, Kenya</p>
+      <p>Phone: <a href="tel:+254700635325">0700635325</a> &nbsp; | &nbsp; Email: <a href="mailto:mountsviewvocational2023@gmail.com">mountsviewvocational2023@gmail.com</a></p>
       <p>&copy; 2025 Mountsview Technical College</p>
+      <p class="footer-credit">
+        Design by <span class="evis">Evis</span> —
+        <a href="https://wa.me/254715365500?text=Hello%20Evis!%20I%20saw%20your%20design%20at%20Mountsview%20College%20site." target="_blank" class="whatsapp-footer-link">
+          <img src="https://img.icons8.com/color/24/000000/whatsapp.png" alt="WhatsApp" />
+          Chat with Evis on WhatsApp
+        </a>
+      </p>
     </div>
   </footer>
+  <!-- Apply Modal (same as index.html) -->
+  <div class="modal" id="applyModal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeModal">&times;</span>
+      <h3>Apply to Mountsview College</h3>
+      <ul class="apply-options">
+        <li>
+          <a href="tel:+254700635325" class="apply-link">
+            <img src="https://img.icons8.com/color/48/000000/phone.png" alt="Call" /> Call us: 0700635325
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/254700635325?text=I%20want%20to%20apply%20to%20Mountsview%20College" class="apply-link" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp" /> WhatsApp Us
+          </a>
+        </li>
+        <li>
+          <a href="https://forms.gle/qCDMy7oj5mysPui28" class="apply-link" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/google-forms.png" alt="Google Form" /> Online Application Form
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
