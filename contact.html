@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Mountsview Technical College</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <script defer src="scripts.js"></script>
 </head>
 <body>
@@ -24,33 +25,72 @@
     </div>
   </header>
   <main>
-    <section class="contact-section">
-      <div class="container contact-container">
-        <h2>Contact Us</h2>
-        <div class="contact-details">
-          <div class="contact-card">
-            <img src="https://img.icons8.com/color/64/000000/address.png" alt="Location icon" />
-            <h3>Location</h3>
-            <p>Naro Moru, Nyeri County, Kenya</p>
+    <section class="contact-hero">
+      <div class="container contact-hero-content">
+        <img src="https://img.icons8.com/color/96/000000/communication.png" alt="Contact Us" class="contact-hero-icon">
+        <h1>Let's Connect</h1>
+        <p>
+          We’re here to answer your questions, guide you through admissions, or help you discover your future at Mountsview Technical College.
+        </p>
+      </div>
+    </section>
+    <section class="contact-section-modern">
+      <div class="container contact-modern-grid">
+        <div class="contact-modern-card contact-modern-details">
+          <h2>Contact Information</h2>
+          <div class="contact-modern-info">
+            <div class="contact-modern-info-item">
+              <img src="https://img.icons8.com/color/48/000000/marker.png" alt="Location">
+              <span>Naro Moru, Nyeri County, Kenya</span>
+            </div>
+            <div class="contact-modern-info-item">
+              <img src="https://img.icons8.com/color/48/000000/phone.png" alt="Phone">
+              <a href="tel:+254700635325">0700635325</a>
+            </div>
+            <div class="contact-modern-info-item">
+              <img src="https://img.icons8.com/color/48/000000/new-post.png" alt="Email">
+              <a href="mailto:mountsviewvocational2023@gmail.com">mountsviewvocational2023@gmail.com</a>
+            </div>
+            <div class="contact-modern-info-item">
+              <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp">
+              <a class="whatsapp-modern-link" href="https://wa.me/254700635325?text=Hello%20Mountsview%20College%20team!" target="_blank">WhatsApp Us</a>
+            </div>
           </div>
-          <div class="contact-card">
-            <img src="https://img.icons8.com/color/64/000000/phone.png" alt="Phone icon" />
-            <h3>Phone</h3>
-            <p><a href="tel:+254700635325">0700635325</a></p>
-          </div>
-          <div class="contact-card">
-            <img src="https://img.icons8.com/color/64/000000/new-post.png" alt="Email icon" />
-            <h3>Email</h3>
-            <p><a href="mailto:mountsviewvocational2023@gmail.com">mountsviewvocational2023@gmail.com</a></p>
+          <div class="contact-socials">
+            <a href="https://facebook.com/" target="_blank" title="Facebook"><img src="https://img.icons8.com/color/32/000000/facebook-new.png" alt="Facebook"></a>
+            <a href="https://twitter.com/" target="_blank" title="Twitter"><img src="https://img.icons8.com/color/32/000000/twitter-squared.png" alt="Twitter"></a>
+            <a href="https://wa.me/254700635325?text=Hello%20Mountsview%20College%20team!" target="_blank" title="WhatsApp"><img src="https://img.icons8.com/color/32/000000/whatsapp.png" alt="WhatsApp"></a>
           </div>
         </div>
-        <form class="contact-form">
-          <h3>Send Us a Message</h3>
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
-          <textarea placeholder="Your Message" required></textarea>
-          <button type="submit" class="btn-primary">Send Message</button>
-        </form>
+        <div class="contact-modern-card contact-modern-form">
+          <h2>Send Us a Message</h2>
+          <form class="contact-form">
+            <div class="contact-form-row">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <textarea name="message" placeholder="Your Message" required rows="5"></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
+          </form>
+          <div class="contact-form-success" id="contactFormSuccess" style="display:none;">
+            <p>Thank you for reaching out! We'll get back to you soon.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-map">
+      <div class="container">
+        <h2>Find Us</h2>
+        <div class="contact-map-embed">
+          <iframe
+            src="https://www.google.com/maps?q=Naro+Moru,+Nyeri+County,+Kenya&output=embed"
+            width="100%"
+            height="250"
+            style="border:0; border-radius:12px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
     </section>
   </main>
