@@ -1,51 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Mountsview Technical College</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="scripts.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Mountsview Technical College</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-container">
-      <div class="brand">Mountsview Technical College</div>
-      <div class="menu-toggle" aria-label="Toggle navigation" tabindex="0"><span></span><span></span><span></span></div>
-      <nav>
-        <ul class="nav-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class="active">About</a></li>
-          <li><a href="academics.html">Academics</a></li>
-          <li><a href="admissions.html">Admissions</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <section class="intro about-intro">
-      <div class="container text-center">
-        <h2>About Mountsview Technical College</h2>
-        <p>
-          <strong>Mountsview Technical College</strong> is dedicated to providing hands-on, practical, and industry-relevant education in Kenya.  
-          Our mission is to empower students through skills-based training, experienced teaching staff, and certifications recognized across the nation.  
-          We offer diverse programs in Health Sciences, Information Technology, and Technical Trades, equipping students for meaningful careers.
-        </p>
-      </div>
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <span class="logo-main">Mountsview</span>
+                    <span class="logo-sub">Technical College</span>
+                </a>
+                <p class="tagline">Center for Technical Skills and Health Sciences</p>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>About Mountsview Technical College</h1>
+            <p>Discover our rich history, mission, and state-of-the-art facilities</p>
+        </div>
     </section>
-  </main>
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 Mountsview Technical College</p>
-      <div class="designer-footer">
-        <span>Design by 
-          <a href="https://wa.me/254715365500?text=Hi%20Evis!%20I%20love%20your%20website%20design%20for%20Mountsview%20College!" target="_blank" class="designer-link">
-            Evis <img src="https://img.icons8.com/color/24/000000/whatsapp.png" alt="WhatsApp" style="vertical-align:middle;" />
-          </a>
-        </span>
-      </div>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our History</h2>
+                    <p>Founded in 2005, Mountsview Technical College has grown from a small vocational training center to one of Kenya's leading institutions for technical and health sciences education. Our journey began with just three programs and 50 students, and today we offer over 15 accredited programs to more than 1,200 students annually.</p>
+                    <p>Over the years, we've continuously adapted our curriculum to meet industry demands, ensuring our graduates remain competitive in the job market. Our alumni network now spans across Kenya and beyond, with graduates making significant contributions in various technical and healthcare fields.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="College building">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mission-section">
+        <div class="container">
+            <div class="mission-content">
+                <div class="mission-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Students working">
+                </div>
+                <div class="mission-text">
+                    <h2>Our Mission & Vision</h2>
+                    <div class="mission-item">
+                        <h3><i class="fas fa-bullseye"></i> Mission</h3>
+                        <p>To provide quality technical and health sciences education that equips students with practical skills, knowledge, and professional ethics for personal development and national growth.</p>
+                    </div>
+                    <div class="mission-item">
+                        <h3><i class="fas fa-eye"></i> Vision</h3>
+                        <p>To be the premier technical college in Kenya recognized for excellence in skills training, innovation, and graduate employability.</p>
+                    </div>
+                    <div class="mission-item">
+                        <h3><i class="fas fa-heart"></i> Core Values</h3>
+                        <ul class="values-list">
+                            <li><i class="fas fa-check"></i> Excellence in Training</li>
+                            <li><i class="fas fa-check"></i> Innovation</li>
+                            <li><i class="fas fa-check"></i> Integrity</li>
+                            <li><i class="fas fa-check"></i> Professionalism</li>
+                            <li><i class="fas fa-check"></i> Student-Centered Approach</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="facilities-section">
+        <div class="container">
+            <h2 class="section-title">Our Facilities</h2>
+            <p class="section-subtitle">State-of-the-art learning environments for practical training</p>
+            
+            <div class="facilities-grid">
+                <div class="facility-card">
+                    <div class="facility-image">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Computer lab">
+                    </div>
+                    <div class="facility-content">
+                        <h3>Modern Computer Labs</h3>
+                        <p>Fully equipped with the latest hardware and software for IT and graphic design programs.</p>
+                    </div>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-image">
+                        <img src="https://images.unsplash.com/photo-1581093057306-1189d6d4979e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Workshop">
+                    </div>
+                    <div class="facility-content">
+                        <h3>Technical Workshops</h3>
+                        <p>Specialized workshops for electrical, electronics, and mechanical practical sessions.</p>
+                    </div>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-image">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Science lab">
+                    </div>
+                    <div class="facility-content">
+                        <h3>Health Sciences Labs</h3>
+                        <p>Simulated hospital environments with modern equipment for health sciences training.</p>
+                    </div>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-image">
+                        <img src="https://images.unsplash.com/photo-1541178735493-479c1a27ed24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Library">
+                    </div>
+                    <div class="facility-content">
+                        <h3>Resource Center</h3>
+                        <p>Well-stocked library with technical references, e-learning resources, and study spaces.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <div class="container">
+            <h2 class="section-title">Our Leadership</h2>
+            <p class="section-subtitle">Meet the team guiding Mountsview's vision</p>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Principal">
+                    </div>
+                    <div class="member-info">
+                        <h3>Dr. Samuel Njoroge</h3>
+                        <p>Principal</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Deputy Principal">
+                    </div>
+                    <div class="member-info">
+                        <h3>Mrs. Grace Mwende</h3>
+                        <p>Deputy Principal (Academics)</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Registrar">
+                    </div>
+                    <div class="member-info">
+                        <h3>Mr. Peter Kamau</h3>
+                        <p>Registrar</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Dean">
+                    </div>
+                    <div class="member-info">
+                        <h3>Dr. Susan Wambui</h3>
+                        <p>Dean of Health Sciences</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Want to Learn More About Mountsview?</h2>
+            <p>Contact us today to schedule a campus tour or request more information about our programs.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                <a href="#" class="btn btn-secondary open-apply-modal">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone"></i> 0700 635 325</li>
+                        <li><i class="fas fa-envelope"></i> info@mountsview.ac.ke</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Mountsview Technical College. All Rights Reserved.</p>
+                <p class="designer-credit">Designed by <a href="https://wa.me/254715365500" target="_blank" class="designer-link">Elvis <i class="fab fa-whatsapp"></i></a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Apply Modal -->
+    <div class="modal" id="applyModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Apply to Mountsview Technical College</h2>
+            <p>Choose your preferred application method:</p>
+            <div class="apply-options">
+                <div class="apply-option" id="callOption">
+                    <i class="fas fa-phone"></i>
+                    <h3>Call Us Directly</h3>
+                    <p>Speak with our admissions team for personalized assistance</p>
+                    <a href="tel:0700635325" class="btn btn-primary">Call 0700 635 325</a>
+                </div>
+                <div class="apply-option" id="whatsappOption">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>WhatsApp Application</h3>
+                    <p>Start your application process via WhatsApp</p>
+                    <a href="https://wa.me/254700635325?text=Hello%2C%20I'm%20interested%20in%20applying%20to%20Mountsview%20Technical%20College.%20Please%20guide%20me." class="btn btn-primary" target="_blank">Chat on WhatsApp</a>
+                </div>
+                <div class="apply-option" id="formOption">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Online Application Form</h3>
+                    <p>Fill out our online application form</p>
+                    <a href="https://forms.gle/qCDMy7oj5mysPui28" class="btn btn-primary" target="_blank">Open Form</a>
+                </div>
+            </div>
+        </div>
     </div>
-  </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
