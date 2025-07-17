@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ... other code ...
 
   // Modern Contact form feedback
-  const contactForm = document.querySelector('.contact-form');
+  const contactForm = document.getElementById('modernContactForm');
   const contactFormSuccess = document.getElementById('contactFormSuccess');
   if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
