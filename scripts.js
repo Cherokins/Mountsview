@@ -28,21 +28,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const courses = [
       {
         name: "Health Sciences",
-        desc: "Medical support, community health, first aid skills."
+        desc: "Medical support, community health, first aid skills.",
+        icon: "https://img.icons8.com/color/96/000000/stethoscope.png"
       },
       {
         name: "Information Technology",
-        desc: "Digital literacy, graphic design, web development, computer repair."
+        desc: "Digital literacy, graphic design, web development, computer repair.",
+        icon: "https://img.icons8.com/color/96/000000/laptop-coding.png"
       },
       {
         name: "Technical Trades",
-        desc: "Fashion, hairdressing, electronics, electrical work."
+        desc: "Fashion, hairdressing, electronics, electrical work.",
+        icon: "https://img.icons8.com/color/96/000000/toolbox.png"
       }
     ];
     courses.forEach(course => {
       const card = document.createElement('div');
       card.className = 'card';
       card.innerHTML = `
+        <img src="${course.icon}" alt="${course.name}" />
         <h3>${course.name}</h3>
         <p>${course.desc}</p>
         <button class="btn-primary apply-btn">Apply</button>
@@ -114,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
     contactForm.addEventListener('submit', function(e) {
       e.preventDefault();
       contactForm.style.display = 'none';
-      contactFormSuccess.style.display = 'block';
+      contactFormSuccess.style.display = 'flex';
     });
   }
 });
