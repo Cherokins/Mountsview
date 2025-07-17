@@ -24,63 +24,40 @@
     </div>
   </header>
   <main>
-    <section class="contact-hero">
-      <div class="container contact-hero-content">
-        <h1>Contact Mountsview Technical College</h1>
-        <p>
-          We’re here for you. Send us a message, call, WhatsApp, email, or visit us in Naro Moru!
-        </p>
-        <button class="btn-primary" id="contactModalBtn">Send a Message</button>
-      </div>
-    </section>
-    <section class="contact-map">
-      <div class="container">
-        <h2>Our Location</h2>
-        <div class="contact-map-embed">
-          <iframe
-            src="https://www.google.com/maps?q=Naro+Moru,+Nyeri+County,+Kenya&output=embed"
-            width="100%"
-            height="250"
-            style="border:0; border-radius:12px;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section class="intro">
+      <div class="container text-center">
+        <h2>Contact Us</h2>
+        <div class="contact-details">
+          <p><strong>Location:</strong> Naro Moru, Nyeri County, Kenya</p>
+          <p><strong>Phone:</strong> <a href="tel:+254700635325">0700635325</a></p>
+          <p><strong>Email:</strong> <a href="mailto:mountsviewvocational2023@gmail.com">mountsviewvocational2023@gmail.com</a></p>
+          <p>
+            <strong>WhatsApp:</strong> 
+            <a href="https://wa.me/254700635325?text=Hello!%20I%20would%20like%20to%20contact%20Mountsview%20College" target="_blank">
+              <img src="https://img.icons8.com/color/24/000000/whatsapp.png" alt="WhatsApp" style="vertical-align:middle;" /> Chat on WhatsApp
+            </a>
+          </p>
         </div>
+        <form class="contact-form" style="max-width:400px;margin:auto;">
+          <input type="text" placeholder="Your Name" required style="width:100%;margin-bottom:1em;padding:0.5em;">
+          <input type="email" placeholder="Your Email" required style="width:100%;margin-bottom:1em;padding:0.5em;">
+          <textarea placeholder="Your Message" required style="width:100%;margin-bottom:1em;padding:0.5em;height:100px;"></textarea>
+          <button type="submit" class="btn-primary" style="width:100%;">Send Message</button>
+        </form>
       </div>
     </section>
   </main>
   <footer class="site-footer">
     <div class="container">
-      <p>Naro Moru, Nyeri County, Kenya</p>
-      <p>Phone: <a href="tel:+254700635325">0700635325</a> &nbsp; | &nbsp; Email: <a href="mailto:mountsviewvocational2023@gmail.com">mountsviewvocational2023@gmail.com</a></p>
       <p>&copy; 2025 Mountsview Technical College</p>
-      <p class="footer-credit">
-        Design by <span class="evis">Evis</span> —
-        <a href="https://wa.me/254715365500?text=Hello%20Evis!%20I%20saw%20your%20design%20at%20Mountsview%20College%20site." target="_blank" class="whatsapp-footer-link">
-          Chat with Evis on WhatsApp
-        </a>
-      </p>
+      <div class="designer-footer">
+        <span>Design by 
+          <a href="https://wa.me/254715365500?text=Hi%20Evis!%20I%20love%20your%20website%20design%20for%20Mountsview%20College!" target="_blank" class="designer-link">
+            Evis <img src="https://img.icons8.com/color/24/000000/whatsapp.png" alt="WhatsApp" style="vertical-align:middle;" />
+          </a>
+        </span>
+      </div>
     </div>
   </footer>
-  <!-- Contact Modal -->
-  <div class="modal" id="contactModal">
-    <div class="modal-content">
-      <span class="close-modal" id="closeContactModal">&times;</span>
-      <h3>Send Us a Message</h3>
-      <form class="contact-form" id="contactForm">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-        <button type="submit" class="btn-primary">Send</button>
-      </form>
-      <div class="contact-form-success" id="contactFormSuccess" style="display:none;">
-        <p>Thank you for reaching out! We'll get back to you soon.</p>
-      </div>
-      <div class="contact-modal-alt">
-        <p>Or call us at <a href="tel:+254700635325">0700635325</a><br>
-        Or WhatsApp <a href="https://wa.me/254700635325?text=Hello%20Mountsview%20College%20team!" target="_blank">the college</a></p>
-      </div>
-    </div>
-  </div>
 </body>
 </html>
