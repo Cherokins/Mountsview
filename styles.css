@@ -158,12 +158,113 @@ body {
 .text-center {
   text-align: center;
 }
+/* Contact section */
+.contact-section {
+  background-color: #f4f6f9;
+  padding: 3em 0;
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-details {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.contact-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 2em 1.5em;
+  text-align: center;
+  min-width: 210px;
+  margin-bottom: 1em;
+}
+.contact-card img {
+  margin-bottom: 0.5em;
+}
+.contact-card h3 {
+  color: #002b5c;
+  font-weight: 700;
+}
+.contact-card p a {
+  color: #003366;
+  text-decoration: none;
+  font-weight: 500;
+}
+.contact-form {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 2em;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.contact-form h3 {
+  text-align: center;
+  color: #002b5c;
+  margin-bottom: 1em;
+}
+.contact-form input,
+.contact-form textarea {
+  font-size: 1em;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  padding: 0.7em;
+}
+.contact-form button {
+  margin-top: 1em;
+}
+/* Footer */
 .site-footer {
   background-color: #002b5c;
   color: #fff;
   padding: 2em 0;
   font-size: 0.95em;
   text-align: center;
+}
+.footer-credit {
+  margin-top: 1em;
+  font-size: 1em;
+  color: #fbc531;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.evis {
+  color: #fff;
+  font-weight: bold;
+  background: #fbc531;
+  padding: 0.15em 0.5em;
+  border-radius: 7px;
+  margin-right: 0.3em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.whatsapp-footer-link {
+  color: #fff;
+  background: #25d366;
+  padding: 0.3em 1em 0.3em 0.5em;
+  border-radius: 7px;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 0.3em;
+  transition: background 0.2s;
+}
+.whatsapp-footer-link:hover {
+  background: #128c7e;
+}
+.whatsapp-footer-link img {
+  margin-right: 0.4em;
+  vertical-align: middle;
 }
 /* Apply Modal */
 .modal {
@@ -260,4 +361,56 @@ body {
   .modal-content {
     padding: 1.2em 0.5em;
   }
+  .contact-details {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+/* Academics blinking & course list */
+.blink {
+  animation: blinkAnim 0.25s 2;
+}
+@keyframes blinkAnim {
+  0% {box-shadow: 0 0 0 0 #fbc531;}
+  50% {box-shadow: 0 0 24px 0 #fbc531;}
+  100% {box-shadow: 0 0 0 0 #fbc531;}
+}
+.course-lists {
+  margin-top: 2em;
+  text-align: center;
+}
+.course-list-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 2em 1.5em;
+  margin: 1em auto 0 auto;
+  max-width: 400px;
+}
+.course-list-card h4 {
+  color: #002b5c;
+  margin-bottom: 1em;
+  font-weight: 700;
+}
+.course-list-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1em 0;
+}
+.course-list-card ul li {
+  padding: 0.4em 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1em;
+}
+.course-list-card ul li:last-child {
+  border-bottom: none;
+}
+.course-list-card .btn-primary {
+  margin-top: 1em;
+  width: 100%;
+  font-size: 1em;
+}
+.about-section {
+  background: #f4f6f9;
+  padding: 4em 0 3em 0;
 }
