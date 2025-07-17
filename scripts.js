@@ -1,6 +1,4 @@
-// scripts.js for Mountsview Technical College site
-
-// Mobile navigation toggle (optional if you're adding burger nav)
+// Burger menu toggle for mobile navigation
 document.addEventListener('DOMContentLoaded', () => {
   const menuToggle = document.querySelector('.menu-toggle');
   const navMenu = document.querySelector('.nav-menu');
@@ -9,9 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
     menuToggle.addEventListener('click', () => {
       navMenu.classList.toggle('active');
     });
+    menuToggle.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        navMenu.classList.toggle('active');
+      }
+    });
   }
 
-  // Optional: Highlight active link based on URL
+  // Highlight active link based on URL
   const currentPage = window.location.pathname.split('/').pop();
   const navLinks = document.querySelectorAll('.nav-menu li a');
 
@@ -23,5 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Future: Add scroll-to-top or form validation scripts here
+  // Contact form basic validation (optional enhancement)
+  const contactForm = document.querySelector('.contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your message! We will get back to you soon.');
+      contactForm.reset();
+    });
+  }
 });
