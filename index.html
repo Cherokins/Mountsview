@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mountsview Technical College – Vocational training for careers that matter." />
   <title>Mountsview Technical College</title>
   <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts for a modern look -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <script defer src="scripts.js"></script>
 </head>
 <body>
@@ -28,35 +29,20 @@
       </nav>
     </div>
   </header>
-
   <main>
     <section class="hero">
       <div class="container hero-content">
-        <h1>Center for Technical Skills and Health Sciences</h1>
+        <h1>Empowering Futures Through Skills</h1>
         <p>Professional training in IT, Technical Trades & Health Sciences</p>
-        <a href="admissions.html" class="btn-primary">Apply Now</a>
+        <button class="btn-primary" id="applyNowBtn">Apply Now</button>
       </div>
     </section>
 
     <section class="features">
       <div class="container">
-        <h2>Explore Mountsview</h2>
-        <div class="card-grid">
-          <div class="card">
-            <h3>Information Technology</h3>
-            <p>Courses in digital literacy, graphic design, and computer repair.</p>
-            <a href="academics.html" class="link-arrow">Learn More</a>
-          </div>
-          <div class="card">
-            <h3>Technical Training</h3>
-            <p>Programs in fashion, hairdressing, electronics, and electrical work.</p>
-            <a href="academics.html" class="link-arrow">Learn More</a>
-          </div>
-          <div class="card">
-            <h3>Health Sciences</h3>
-            <p>Medical support and community health skills for modern care.</p>
-            <a href="academics.html" class="link-arrow">Learn More</a>
-          </div>
+        <h2>Our Courses</h2>
+        <div class="card-grid" id="coursesGrid">
+          <!-- Cards will be injected via JS for easy editing -->
         </div>
       </div>
     </section>
@@ -72,9 +58,34 @@
   <footer class="site-footer">
     <div class="container">
       <p>Naro Moru, Nyeri County, Kenya</p>
-      <p>Phone: +254 712 345 678 &nbsp; | &nbsp; Email: info@mountsviewcollege.ac.ke</p>
+      <p>Phone: +254 700 635 235 &nbsp; | &nbsp; Email: info@mountsviewcollege.ac.ke</p>
       <p>&copy; 2025 Mountsview Technical College</p>
     </div>
   </footer>
+
+  <!-- Apply Modal -->
+  <div class="modal" id="applyModal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeModal">&times;</span>
+      <h3>Apply to Mountsview College</h3>
+      <ul class="apply-options">
+        <li>
+          <a href="tel:+254700635235" class="apply-link">
+            <img src="https://img.icons8.com/color/48/000000/phone.png" alt="Call" /> Call us: 0700635235
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/254700635235?text=I%20want%20to%20apply%20to%20Mountsview%20College" class="apply-link" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp" /> WhatsApp Us
+          </a>
+        </li>
+        <li>
+          <a href="https://forms.gle/your-google-form-id" class="apply-link" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/google-forms.png" alt="Google Form" /> Online Application Form
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
