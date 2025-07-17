@@ -158,71 +158,6 @@ body {
 .text-center {
   text-align: center;
 }
-/* Contact section */
-.contact-section {
-  background-color: #f4f6f9;
-  padding: 3em 0;
-}
-.contact-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contact-details {
-  display: flex;
-  gap: 2em;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 2em;
-}
-.contact-card {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
-  padding: 2em 1.5em;
-  text-align: center;
-  min-width: 210px;
-  margin-bottom: 1em;
-}
-.contact-card img {
-  margin-bottom: 0.5em;
-}
-.contact-card h3 {
-  color: #002b5c;
-  font-weight: 700;
-}
-.contact-card p a {
-  color: #003366;
-  text-decoration: none;
-  font-weight: 500;
-}
-.contact-form {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
-  padding: 2em;
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-.contact-form h3 {
-  text-align: center;
-  color: #002b5c;
-  margin-bottom: 1em;
-}
-.contact-form input,
-.contact-form textarea {
-  font-size: 1em;
-  border: 1px solid #bbb;
-  border-radius: 4px;
-  padding: 0.7em;
-}
-.contact-form button {
-  margin-top: 1em;
-}
 /* Footer */
 .site-footer {
   background-color: #002b5c;
@@ -361,11 +296,8 @@ body {
   .modal-content {
     padding: 1.2em 0.5em;
   }
-  .contact-details {
-    flex-direction: column;
-    gap: 1em;
-  }
 }
+
 /* Academics blinking & course list */
 .blink {
   animation: blinkAnim 0.25s 2;
@@ -409,8 +341,4 @@ body {
   margin-top: 1em;
   width: 100%;
   font-size: 1em;
-}
-.about-section {
-  background: #f4f6f9;
-  padding: 4em 0 3em 0;
 }
