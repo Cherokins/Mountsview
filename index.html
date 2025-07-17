@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mountsview Technical College</title>
   <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts for a modern look -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <script defer src="scripts.js"></script>
 </head>
@@ -40,8 +41,8 @@
     <section class="features">
       <div class="container">
         <h2>Our Courses</h2>
-        <div class="card-grid" id="coursesGridHome">
-          <!-- Cards injected by JS -->
+        <div class="card-grid" id="coursesGrid">
+          <!-- Cards will be injected via JS for easy editing -->
         </div>
       </div>
     </section>
@@ -49,14 +50,27 @@
     <section class="intro">
       <div class="container text-center">
         <h2>Welcome to Mountsview</h2>
-        <p>
-          Located in Naro Moru, Nyeri County, Kenya — Mountsview Technical College blends hands-on learning, experienced instructors, and certification that sets you apart.
-        </p>
+        <p>Located in Naro Moru, Nyeri County, Kenya — Mountsview Technical College blends hands-on learning, experienced instructors, and certification that sets you apart.</p>
       </div>
     </section>
   </main>
 
-  <!-- Modal -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>Naro Moru, Nyeri County, Kenya</p>
+      <p>Phone: <a href="tel:+254700635325">0700635325</a> &nbsp; | &nbsp; Email: <a href="mailto:mountsviewvocational2023@gmail.com">mountsviewvocational2023@gmail.com</a></p>
+      <p>&copy; 2025 Mountsview Technical College</p>
+      <p class="footer-credit">
+        Design by <span class="evis">Evis</span> —
+        <a href="https://wa.me/254715365500?text=Hello%20Evis!%20I%20saw%20your%20design%20at%20Mountsview%20College%20site." target="_blank" class="whatsapp-footer-link">
+          <img src="https://img.icons8.com/color/24/000000/whatsapp.png" alt="WhatsApp" />
+          Chat with Evis on WhatsApp
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Apply Modal -->
   <div class="modal" id="applyModal">
     <div class="modal-content">
       <span class="close-modal" id="closeModal">&times;</span>
@@ -73,29 +87,12 @@
           </a>
         </li>
         <li>
-          <a href="https://forms.gle/your-google-form-id" class="apply-link" target="_blank">
+          <a href="https://forms.gle/qCDMy7oj5mysPui28" class="apply-link" target="_blank">
             <img src="https://img.icons8.com/color/48/000000/google-forms.png" alt="Google Form" /> Online Application Form
           </a>
         </li>
       </ul>
     </div>
   </div>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>Naro Moru, Nyeri County, Kenya</p>
-      <p>Phone: <a href="tel:+254700635325" class="footer-link">0700635325</a> &nbsp; | &nbsp; Email: <a href="mailto:mountsviewvocational2023@gmail.com" class="footer-link">mountsviewvocational2023@gmail.com</a></p>
-      <p>
-        &copy; 2025 Mountsview Technical College <br>
-        <span class="footer-designer">
-          Designed by <span class="designer-name">Evis</span> &mdash;
-          <a class="whatsapp-designer" href="https://wa.me/254715365500?text=Hi%20Evis%2C%20I%20found%20your%20work%20on%20Mountsview%20College%20website!" target="_blank">
-            <img src="https://img.icons8.com/color/24/000000/whatsapp.png" alt="Whatsapp" />
-            WhatsApp Evis
-          </a>
-        </span>
-      </p>
-    </div>
-  </footer>
 </body>
 </html>
