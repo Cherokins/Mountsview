@@ -1,67 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Admissions | Mountsview Technical College</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="scripts.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - Mountsview Technical College</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-container">
-      <div class="brand">Mountsview Technical College</div>
-      <div class="menu-toggle" aria-label="Toggle navigation" tabindex="0"><span></span><span></span><span></span></div>
-      <nav>
-        <ul class="nav-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="academics.html">Academics</a></li>
-          <li><a href="admissions.html" class="active">Admissions</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <section class="intro">
-      <div class="container text-center">
-        <h2>Admissions</h2>
-        <p>
-          Ready to start your journey at Mountsview Technical College?<br>
-          Choose how you'd like to apply:
-        </p>
-        <ul class="apply-options admissions-options">
-          <li>
-            <a href="tel:+254700635325" class="apply-link">
-              <img src="https://img.icons8.com/color/48/000000/phone.png" alt="Call" /> Call us: 0700635325
-            </a>
-          </li>
-          <li>
-            <a href="https://wa.me/254700635325?text=I%20want%20to%20apply%20to%20Mountsview%20College" class="apply-link" target="_blank">
-              <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp" /> WhatsApp Us
-            </a>
-          </li>
-          <li>
-            <a href="https://forms.gle/qCDMy7oj5mysPui28" class="apply-link" target="_blank">
-              <img src="https://img.icons8.com/color/48/000000/google-forms.png" alt="Google Form" /> Online Application Form
-            </a>
-          </li>
-        </ul>
-      </div>
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <span class="logo-main">Mountsview</span>
+                    <span class="logo-sub">Technical College</span>
+                </a>
+                <p class="tagline">Center for Technical Skills and Health Sciences</p>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html" class="active">Admissions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Admissions Process</h1>
+            <p>Your journey to technical education starts here</p>
+        </div>
     </section>
-  </main>
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 Mountsview Technical College</p>
-      <div class="designer-footer">
-        <span>Design by 
-          <a href="https://wa.me/254715365500?text=Hi%20Evis!%20I%20love%20your%20website%20design%20for%20Mountsview%20College!" target="_blank" class="designer-link">
-            Evis <img src="https://img.icons8.com/color/24/000000/whatsapp.png" alt="WhatsApp" style="vertical-align:middle;" />
-          </a>
-        </span>
-      </div>
+
+    <section class="admission-steps">
+        <div class="container">
+            <h2 class="section-title">How to Apply</h2>
+            <p class="section-subtitle">Follow these simple steps to join Mountsview Technical College</p>
+            
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Choose Your Program</h3>
+                        <p>Browse our <a href="academics.html">academic programs</a> and select the course that aligns with your career goals.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Check Requirements</h3>
+                        <p>Ensure you meet the minimum entry requirements for your chosen program (listed below).</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Submit Application</h3>
+                        <p>Complete the application process through your preferred method (online, WhatsApp, or in-person).</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Receive Admission Letter</h3>
+                        <p>Successful applicants will receive an official admission letter within 7 working days.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Pay Fees & Register</h3>
+                        <p>Complete fee payment and registration to secure your place in the program.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="requirements-section">
+        <div class="container">
+            <div class="requirements-content">
+                <div class="requirements-text">
+                    <h2>Entry Requirements</h2>
+                    
+                    <div class="requirement-category">
+                        <h3><i class="fas fa-certificate"></i> Certificate Programs</h3>
+                        <ul>
+                            <li>Minimum KCSE mean grade of D (plain) or equivalent</li>
+                            <li>KCSE certificate or equivalent qualification</li>
+                            <li>National ID or birth certificate</li>
+                            <li>2 passport-size photos</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="requirement-category">
+                        <h3><i class="fas fa-graduation-cap"></i> Diploma Programs</h3>
+                        <ul>
+                            <li>Minimum KCSE mean grade of C- (minus) or equivalent</li>
+                            <li>KCSE certificate or equivalent qualification</li>
+                            <li>National ID or birth certificate</li>
+                            <li>2 passport-size photos</li>
+                            <li>Relevant certificate for upgrade students</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="requirement-category">
+                        <h3><i class="fas fa-user-graduate"></i> Mature Entry</h3>
+                        <ul>
+                            <li>Minimum age of 25 years</li>
+                            <li>Relevant work experience in chosen field</li>
+                            <li>Pass mature entry examination</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="requirements-image">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Students learning">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="intakes-section">
+        <div class="container">
+            <h2 class="section-title">Intake Periods</h2>
+            <p class="section-subtitle">We offer three main intake periods throughout the year</p>
+            
+            <div class="intakes-grid">
+                <div class="intake-card">
+                    <div class="intake-header">
+                        <h3>January Intake</h3>
+                        <p>Main Intake</p>
+                    </div>
+                    <div class="intake-body">
+                        <ul>
+                            <li><strong>Application Deadline:</strong> December 15</li>
+                            <li><strong>Reporting Date:</strong> January 10</li>
+                            <li><strong>Orientation:</strong> January 11-13</li>
+                            <li><strong>Classes Begin:</strong> January 16</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="intake-card">
+                    <div class="intake-header">
+                        <h3>May Intake</h3>
+                        <p>Mid-Year Intake</p>
+                    </div>
+                    <div class="intake-body">
+                        <ul>
+                            <li><strong>Application Deadline:</strong> April 15</li>
+                            <li><strong>Reporting Date:</strong> May 5</li>
+                            <li><strong>Orientation:</strong> May 6-7</li>
+                            <li><strong>Classes Begin:</strong> May 9</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="intake-card">
+                    <div class="intake-header">
+                        <h3>September Intake</h3>
+                        <p>Late-Year Intake</p>
+                    </div>
+                    <div class="intake-body">
+                        <ul>
+                            <li><strong>Application Deadline:</strong> August 20</li>
+                            <li><strong>Reporting Date:</strong> September 5</li>
+                            <li><strong>Orientation:</strong> September 6-8</li>
+                            <li><strong>Classes Begin:</strong> September 11</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fees-section">
+        <div class="container">
+            <h2 class="section-title">Fee Structure</h2>
+            <p class="section-subtitle">Affordable technical education with flexible payment options</p>
+            
+            <div class="fees-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="certificate">Certificate Programs</button>
+                    <button class="tab-btn" data-tab="diploma">Diploma Programs</button>
+                    <button class="tab-btn" data-tab="other">Other Charges</button>
+                </div>
+                
+                <div class="tab-content active" id="certificate">
+                    <div class="table-responsive">
+                        <table class="fees-table">
+                            <thead>
+                                <tr>
+                                    <th>Program</th>
+                                    <th>Duration</th>
+                                    <th>Tuition Fees (KES)</th>
+                                    <th>Total Fees (KES)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Digital Literacy</td>
+                                    <td>3 months</td>
+                                    <td>15,000</td>
+                                    <td>18,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Graphic Design</td>
+                                    <td>6 months</td>
+                                    <td>30,000</td>
+                                    <td>36,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer Repairs</td>
+                                    <td>6 months</td>
+                                    <td>32,000</td>
+                                    <td>38,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Hair Dressing</td>
+                                    <td>9 months</td>
+                                    <td>45,000</td>
+                                    <td>52,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Electronics Repair</td>
+                                    <td>9 months</td>
+                                    <td>48,000</td>
+                                    <td>55,500</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="diploma">
+                    <div class="table-responsive">
+                        <table class="fees-table">
+                            <thead>
+                                <tr>
+                                    <th>Program</th>
+                                    <th>Duration</th>
+                                    <th>Tuition Fees (KES)</th>
+                                    <th>Total Fees (KES)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Fashion Design</td>
+                                    <td>12 months</td>
+                                    <td>60,000</td>
+                                    <td>72,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Electrical Installation</td>
+                                    <td>12 months</td>
+                                    <td>65,000</td>
+                                    <td>78,000</td>
+                                </tr>
+                                <tr>
+                                    <td>CNA/HSS</td>
+                                    <td>12 months</td>
+                                    <td>70,000</td>
+                                    <td>85,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Nutrition & Dietetics</td>
+                                    <td>12 months</td>
+                                    <td>75,000</td>
+                                    <td>90,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Theatre Technology</td>
+                                    <td>18 months</td>
+                                    <td>105,000</td>
+                                    <td>125,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="other">
+                    <div class="other-fees">
+                        <div class="fee-item">
+                            <h3><i class="fas fa-file-invoice-dollar"></i> Registration Fee</h3>
+                            <p>KES 1,500 (Non-refundable, paid once on admission)</p>
+                        </div>
+                        <div class="fee-item">
+                            <h3><i class="fas fa-id-card"></i> Student ID</h3>
+                            <p>KES 500 (Issued annually)</p>
+                        </div>
+                        <div class="fee-item">
+                            <h3><i class="fas fa-book"></i> Examination Fee</h3>
+                            <p>KES 3,000 - 5,000 (Depending on program, paid per semester)</p>
+                        </div>
+                        <div class="fee-item">
+                            <h3><i class="fas fa-tshirt"></i> Practical Attire</h3>
+                            <p>KES 2,500 - 4,000 (Program-specific, paid once)</p>
+                        </div>
+                        <div class="fee-item">
+                            <h3><i class="fas fa-home"></i> Hostel Accommodation</h3>
+                            <p>KES 15,000 per term (Optional)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="payment-options">
+                <h3>Payment Options</h3>
+                <div class="options-grid">
+                    <div class="option-card">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <h4>Cash Payment</h4>
+                        <p>Pay directly at the college finance office</p>
+                    </div>
+                    <div class="option-card">
+                        <i class="fas fa-university"></i>
+                        <h4>Bank Deposit</h4>
+                        <p>Account: Mountsview Technical College<br>
+                           Bank: KCB<br>
+                           Account No: 1234567890<br>
+                           Branch: Nairobi Main</p>
+                    </div>
+                    <div class="option-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>Mobile Money</h4>
+                        <p>Paybill: 123456<br>
+                           Account: Your Admission Number</p>
+                    </div>
+                    <div class="option-card">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h4>Installments</h4>
+                        <p>50% on admission, balance in monthly installments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Begin Your Application Today</h2>
+            <p>Take the first step toward your technical career with Mountsview Technical College.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary open-apply-modal">Apply Now</a>
+                <a href="contact.html" class="btn btn-secondary">Request Info</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone"></i> 0700 635 325</li>
+                        <li><i class="fas fa-envelope"></i> info@mountsview.ac.ke</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Mountsview Technical College. All Rights Reserved.</p>
+                <p class="designer-credit">Designed by <a href="https://wa.me/254715365500" target="_blank" class="designer-link">Elvis <i class="fab fa-whatsapp"></i></a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Apply Modal -->
+    <div class="modal" id="applyModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Apply to Mountsview Technical College</h2>
+            <p>Choose your preferred application method:</p>
+            <div class="apply-options">
+                <div class="apply-option" id="callOption">
+                    <i class="fas fa-phone"></i>
+                    <h3>Call Us Directly</h3>
+                    <p>Speak with our admissions team for personalized assistance</p>
+                    <a href="tel:0700635325" class="btn btn-primary">Call 0700 635 325</a>
+                </div>
+                <div class="apply-option" id="whatsappOption">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>WhatsApp Application</h3>
+                    <p>Start your application process via WhatsApp</p>
+                    <a href="https://wa.me/254700635325?text=Hello%2C%20I'm%20interested%20in%20applying%20to%20Mountsview%20Technical%20College.%20Please%20guide%20me." class="btn btn-primary" target="_blank">Chat on WhatsApp</a>
+                </div>
+                <div class="apply-option" id="formOption">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Online Application Form</h3>
+                    <p>Fill out our online application form</p>
+                    <a href="https://forms.gle/qCDMy7oj5mysPui28" class="btn btn-primary" target="_blank">Open Form</a>
+                </div>
+            </div>
+        </div>
     </div>
-  </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
