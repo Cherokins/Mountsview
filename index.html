@@ -7,206 +7,26 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* Enhanced Navigation Styles */
-        .nav {
-            position: relative;
-            background: #fff;
-            border-radius: 40px;
-            padding: 0.5rem 2rem;
-            box-shadow: 0 3px 12px rgba(44,62,80,0.07);
-            display: flex;
-            align-items: center;
-            z-index: 10;
-        }
-        .nav-list {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        .nav-list li {
-            position: relative;
-        }
-        .nav-list a {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1rem;
-            font-weight: 500;
-            color: #23395d;
-            padding: 0.7rem 1.1rem;
-            border-radius: 25px;
-            transition: background 0.3s, color 0.3s, box-shadow 0.3s;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-        }
-        .nav-list a.active, .nav-list a:hover {
-            background: linear-gradient(90deg, #3b82f6 0%, #06b6d4 100%);
-            color: #fff;
-            box-shadow: 0 2px 8px rgba(59,130,246,0.13);
-        }
-        .nav-list a i {
-            margin-right: 0.4rem;
-        }
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            margin-left: 2rem;
-            cursor: pointer;
-        }
-        .hamburger span {
-            width: 28px;
-            height: 3px;
-            background: #23395d;
-            border-radius: 2px;
-            display: block;
-            transition: all 0.3s;
-        }
-        @media (max-width: 900px) {
-            .nav-list {
-                gap: 1rem;
-            }
-        }
-        @media (max-width: 750px) {
-            .nav {
-                padding: 0.5rem 1rem;
-            }
-            .nav-list {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                flex-direction: column;
-                gap: 0;
-                background: #fff;
-                box-shadow: 0 3px 12px rgba(44,62,80,0.13);
-                border-radius: 0 0 20px 20px;
-                display: none;
-            }
-            .nav-list.show {
-                display: flex;
-            }
-            .nav-list li {
-                width: 100%;
-                text-align: center;
-            }
-            .nav-list a {
-                border-radius: 0;
-                padding: 1rem 0;
-                border-bottom: 1px solid #f1f1f1;
-            }
-            .hamburger {
-                display: flex;
-            }
-        }
-
-        /* Improved Title/Branding Styles */
-        .branding {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 0.3rem;
-            padding: 1.2rem 0 1.2rem 0;
-            background: linear-gradient(90deg, #f0f4fc 0%, #e0e7ff 100%);
-            border-radius: 24px 24px 36px 36px;
-            box-shadow: 0 2px 8px rgba(44,62,80,0.06);
-            margin-bottom: 1rem;
-        }
-
-        .logo {
-            font-size: 2.1rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-            color: #3b82f6;
-            text-decoration: none;
-            line-height: 1;
-            display: flex;
-            align-items: baseline;
-            gap: 0.4rem;
-        }
-
-        .logo-main {
-            font-family: 'Poppins', sans-serif;
-            color: #23395d;
-            font-size: 2.1rem;
-            font-weight: 700;
-        }
-
-        .logo-sub {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.1rem;
-            font-weight: 400;
-            color: #06b6d4;
-            margin-left: 0.3rem;
-            letter-spacing: 0.5px;
-        }
-
-        .college-title {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.08rem;
-            font-weight: 500;
-            color: #4f59a5;
-            margin-top: 0.2rem;
-            margin-bottom: 0;
-            letter-spacing: 0.2px;
-            text-shadow: 0 1px 0 #fff, 0 2px 4px rgba(59,130,246,0.06);
-        }
-
-        @media (max-width: 750px) {
-            .branding {
-                align-items: center;
-                padding: 1rem 0.3rem 1rem 0.3rem;
-                border-radius: 16px 16px 20px 20px;
-                margin-bottom: 0.5rem;
-            }
-            .logo-main { font-size: 1.3rem; }
-            .logo-sub { font-size: 0.9rem; }
-            .college-title { font-size: 0.98rem; text-align: center; }
-        }
-    </style>
-    <script>
-        // Mobile menu toggle
-        document.addEventListener('DOMContentLoaded', function() {
-            const hamburger = document.querySelector('.hamburger');
-            const navList = document.querySelector('.nav-list');
-            hamburger.addEventListener('click', function() {
-                navList.classList.toggle('show');
-                hamburger.classList.toggle('open');
-            });
-            // Optional: close nav on link click (mobile)
-            navList.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    if(window.innerWidth < 750) {
-                        navList.classList.remove('show');
-                        hamburger.classList.remove('open');
-                    }
-                });
-            });
-        });
-    </script>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <!-- Improved Branding Section -->
-            <div class="branding">
+            <div class="logo-container">
                 <a href="index.html" class="logo">
                     <span class="logo-main">Mountsview</span>
                     <span class="logo-sub">Technical College</span>
                 </a>
-                <h2 class="college-title">Center for Technical Skills and Health Sciences</h2>
+                <p class="tagline">Center for Technical Skills and Health Sciences</p>
             </div>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
-                    <li><a href="academics.html"><i class="fas fa-graduation-cap"></i> Academics</a></li>
-                    <li><a href="admissions.html"><i class="fas fa-user-check"></i> Admissions</a></li>
-                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="hamburger" aria-label="Open navigation menu" tabindex="0">
+                <div class="hamburger">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -251,6 +71,7 @@
         <div class="container">
             <h2 class="section-title">Our Courses</h2>
             <p class="section-subtitle">Industry-relevant programs designed for your success</p>
+
             <div class="course-categories">
                 <div class="category">
                     <h3><i class="fas fa-laptop-code"></i> Information Technology</h3>
@@ -272,6 +93,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="category">
                     <h3><i class="fas fa-tools"></i> Technical Programs</h3>
                     <div class="course-cards">
@@ -297,6 +119,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="category">
                     <h3><i class="fas fa-medkit"></i> Health Sciences</h3>
                     <div class="course-cards">
@@ -335,6 +158,7 @@
         <div class="container">
             <h2 class="section-title">Success Stories</h2>
             <p class="section-subtitle">What our students say about us</p>
+            
             <div class="testimonial-slider">
                 <div class="testimonial active">
                     <p>"Mountsview gave me the practical skills I needed to start my own electronics repair business right after graduation."</p>
